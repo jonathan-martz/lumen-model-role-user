@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-class AddRoleUserTable extends Migration
+class AddRoleUser extends Migration
 {
     /**
      * Run the migrations.
