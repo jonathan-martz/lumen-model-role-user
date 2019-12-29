@@ -14,6 +14,9 @@ class AddRoleUser extends Migration
      */
     public function up()
     {
+        /**
+         * @todo fix bug if database migrations for user_role is not executed
+         */
         if (Schema::hasTable('user_role')) {
             $count = DB::table('user_role')->where('name', '=', 'user')->count();
             if ($count === 0) {
